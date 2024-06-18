@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atletas do Botafogo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png" sizes="16x16">
+  
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="logo.png" alt="Logo do Botafogo" class="logo">
+      <ul id="menu">
+        <li><a href="#">Página Inicial</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+        <li class="sair">
+          <button class="sair-btn" onclick="voltarParaPaginaPrincipal()">Sair</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Atletas do Botafogo</h2>
+      <select id="filtroElenco">
+        <option value="all">Todos</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <input type="text" id="barraBusca" placeholder="Buscar jogador por nome">
+      </select>
+      <div id="listaAtletas"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
